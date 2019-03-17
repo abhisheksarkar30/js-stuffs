@@ -1,0 +1,16 @@
+{
+	"name": "URL Redirect on Request",
+	"author" : "Abhishek Sarkar",
+	"version": "1.0",
+	"description": "Checks URL and redirects as required on Request.",
+	"background": {"scripts":["redirect.js"]},
+	"manifest_version": 2,
+	"icons": {"48": "icon48.png"},
+	"content_scripts": [
+	{
+	 "matches": ["<all_urls>"],
+	 "js": ["content.js"]
+	}
+	],
+	"permissions": ["tabs"]
+}
